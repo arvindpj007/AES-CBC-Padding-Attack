@@ -9,7 +9,7 @@
     The encryption/decryption can be performed with the following command:
 
         ./encrypt <mode> -k <32-byte key in hexadecimal> -i <input file> -o <output file>
-    mode = `encrypt` or `decrypt`
+    mode = `encrypt` or `decrypt` and first 16 bytes of the key is used for encryption and last 16 bytes of MAC calculation.
 
 2. `decrypt-test` contains `main.go` program that works like the oracle. The program `./decrypt-test` that has the key K hardcoded into it. It performs decryption of the provided cipher text and it will not return the decrypted ciphertext, but instead only a single one of the following three response messages:
     1. “SUCCESS”
