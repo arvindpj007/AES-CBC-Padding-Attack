@@ -20,6 +20,6 @@
 
         ./decrypt-test -i <ciphertext file>
 
-3. `decrypt-attack` contains `main.go` program that performs the padding oracle attack. The program takes a cipher text as the input programmatically decrypts annd returns the plain text of any ciphertext produced by your encryption utility from `encrypt-auth` with the help of `./decrypt-test`. It will not have access to a decrypt-key. The command-line profile for decrypt-test will be as follows:
+3. `decrypt-attack` contains `main.go` program that performs the padding oracle attack. The program takes a cipher text as the input programmatically decrypts and returns the plain text of any ciphertext produced by your encryption utility from `encrypt-auth` with the help of `./decrypt-test`. It will not have access to a decrypt-key. The command-line profile for decrypt-test will be as follows:
 
         ./decrypt-attack -i <ciphertext file>
