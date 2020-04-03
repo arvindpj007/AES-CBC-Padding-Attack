@@ -1,4 +1,4 @@
-# AES-CBC-Padding-Attack
+# AES CBC Padding Attack
 > Golang programs for Padding Oracle attack for AES CBC mode.
 
 1. `encrypt-auth` contains `main.go` program to perform AES encryption in CBC mode with HMAC. Here the AES and SHA256 functions are used from the standard package, but the CBC mode encryption and HMAC calculations are performed in program.
